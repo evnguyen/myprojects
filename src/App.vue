@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Header msg="Welcome to Your Vue.js App  test"/>
+    <Header></Header>
     <router-view></router-view>
   </v-app>
 </template>
