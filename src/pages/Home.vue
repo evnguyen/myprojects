@@ -1,23 +1,58 @@
+<!--TODO: Make the site responsive-->
+<!--TODO: Clean up code-->
 <template>
     <v-layout row wrap>
         <v-flex xs12>
-            <v-card color="black" dark height="500" style="vertical-align: middle;">
-                <div class="container">
-                    <!--Maybe have this be different ways to say hello and have this auto slide/transition to the next one -->
-                    <!--Use carousels? -->
-                    <div class="display-4">Hello.</div>
-                </div>
+            <v-card color="black" dark height="500" style="vertical-align: middle;" class="home-words">
+                <v-layout row wrap style="height: 100%;">
+                    <v-flex xs4>
+                        <v-layout column>
+                            <v-flex v-scroll-reveal.reset="{ delay: 550, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                                <div class="display-3 word" style="text-align: right; margin: 20% 10% 0 10%;">Bonjour.</div>
+                            </v-flex>
+                            <v-flex style="margin:20%" class="word" v-scroll-reveal.reset="{ delay: 350, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                                <div class="display-3" style="text-align: right; margin: 20% 20% 0 0">Ciao.</div>
+                            </v-flex>
+                            <v-flex class="word" v-scroll-reveal.reset="{  delay: 150, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                                <div class="display-3" style="text-align: right; margin: 0 20% 0 0">Hola.</div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+                    <v-flex xs4 style="height: 100%">
+                        <div class="container" v-scroll-reveal.reset="{ delay: 250, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                            <!--Maybe have this be different ways to say hello and have this auto slide/transition to the next one -->
+                            <!--Use carousels? -->
+                            <div class="display-4 word">Hello.</div>
+                        </div>
+                    </v-flex>
+
+                    <v-flex xs4>
+                        <v-layout column >
+                            <v-flex class="word" v-scroll-reveal.reset="{ delay: 350, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                                <div class="display-3 word" style="text-align: left; margin: 10% 10% 0 10%;">Szia.</div>
+                            </v-flex>
+                            <v-flex class="word" v-scroll-reveal.reset="{ delay: 650, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                                <div class="display-3 word" style="text-align: center; margin: 30% 20% 0 0">Ni Hau.</div>
+                            </v-flex>
+                            <v-flex class="word" v-scroll-reveal.reset="{ delay: 250, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                                <div class="display-3 word" style="text-align: left; margin: 20% 20% 0 0">Konnichiwa.</div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+                </v-layout>
             </v-card>
         </v-flex>
         <v-flex xs12>
-            <div style="margin: 5%">What this website is for?</div>
-            <div style="margin: 5%" class="body-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet pretium augue, non dictum felis gravida id. Etiam sollicitudin, massa pulvinar ultricies pharetra, risus ex ornare est, eu blandit dolor nisi at lorem. Nam et rutrum nulla. Nulla at condimentum quam, non sodales velit. Mauris in eros luctus, fermentum arcu gravida, mollis quam. Donec tempus faucibus ipsum eget tristique. Aenean eu mattis justo. Ut convallis turpis et urna dictum aliquam. Aliquam maximus vehicula cursus. Nulla a massa ultrices felis blandit interdum. Nulla consequat felis eu justo fermentum, at molestie sem ullamcorper. Aliquam dictum enim quam, nec porttitor risus imperdiet gravida. Morbi vulputate sem ut vehicula accumsan. Sed accumsan mauris nec efficitur ultricies. Sed scelerisque porttitor efficitur.
+            <v-card class="section">
+                <div style="margin: 5%; text-align: center;" class="display-2">~ What this website is for? ~</div>
+                <div style="margin: 5%" class="body-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet pretium augue, non dictum felis gravida id. Etiam sollicitudin, massa pulvinar ultricies pharetra, risus ex ornare est, eu blandit dolor nisi at lorem. Nam et rutrum nulla. Nulla at condimentum quam, non sodales velit. Mauris in eros luctus, fermentum arcu gravida, mollis quam. Donec tempus faucibus ipsum eget tristique. Aenean eu mattis justo. Ut convallis turpis et urna dictum aliquam. Aliquam maximus vehicula cursus. Nulla a massa ultrices felis blandit interdum. Nulla consequat felis eu justo fermentum, at molestie sem ullamcorper. Aliquam dictum enim quam, nec porttitor risus imperdiet gravida. Morbi vulputate sem ut vehicula accumsan. Sed accumsan mauris nec efficitur ultricies. Sed scelerisque porttitor efficitur.
 
-                Aenean eu tortor molestie est laoreet condimentum in ut ipsum. In velit leo, volutpat a felis in, consectetur posuere lacus. Cras mollis faucibus gravida. Nullam quis ipsum nisl. Donec suscipit velit et ipsum tincidunt, a congue ex efficitur. Sed lacinia, urna at pharetra lacinia, dolor nibh cursus dolor, at egestas massa leo nec augue. Vivamus aliquet ultricies tincidunt. Integer malesuada diam velit. Suspendisse efficitur ante eget efficitur scelerisque.
+                    Aenean eu tortor molestie est laoreet condimentum in ut ipsum. In velit leo, volutpat a felis in, consectetur posuere lacus. Cras mollis faucibus gravida. Nullam quis ipsum nisl. Donec suscipit velit et ipsum tincidunt, a congue ex efficitur. Sed lacinia, urna at pharetra lacinia, dolor nibh cursus dolor, at egestas massa leo nec augue. Vivamus aliquet ultricies tincidunt. Integer malesuada diam velit. Suspendisse efficitur ante eget efficitur scelerisque.
 
-                Integer ipsum diam, lacinia non ex in, cursus maximus nunc. Nulla molestie ipsum lacus, sit amet porta ipsum gravida ut. Cras sit amet blandit sem, suscipit egestas elit. Proin aliquam ante at nisl venenatis congue non ac augue. Sed sagittis magna quis est dictum volutpat. Vivamus rhoncus eleifend leo eget finibus. Integer ac feugiat est. Etiam nec ex efficitur elit placerat accumsan quis at neque. Vestibulum ac nisl tempor nisi pretium cursus et convallis enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras sit amet nisi commodo felis mollis volutpat. Integer bibendum odio vitae diam imperdiet convallis. Etiam tempus, leo ac sollicitudin gravida, velit libero consectetur enim, eu rhoncus felis massa in erat. Ut non magna vitae enim varius feugiat et eu augue. Etiam finibus congue sapien, nec volutpat diam.
-            </div>
+                    Integer ipsum diam, lacinia non ex in, cursus maximus nunc. Nulla molestie ipsum lacus, sit amet porta ipsum gravida ut. Cras sit amet blandit sem, suscipit egestas elit. Proin aliquam ante at nisl venenatis congue non ac augue. Sed sagittis magna quis est dictum volutpat. Vivamus rhoncus eleifend leo eget finibus. Integer ac feugiat est. Etiam nec ex efficitur elit placerat accumsan quis at neque. Vestibulum ac nisl tempor nisi pretium cursus et convallis enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras sit amet nisi commodo felis mollis volutpat. Integer bibendum odio vitae diam imperdiet convallis. Etiam tempus, leo ac sollicitudin gravida, velit libero consectetur enim, eu rhoncus felis massa in erat. Ut non magna vitae enim varius feugiat et eu augue. Etiam finibus congue sapien, nec volutpat diam.
+                </div>
+            </v-card>
         </v-flex>
     </v-layout>
 </template>
@@ -34,5 +69,35 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .home-words {
+        margin-top: 4%;
+    }
+
+    .home-words:after {
+        width: 100%;
+        content: "";
+        display: block;
+        height: 50%;
+        position: absolute;
+        top: 60%;
+        -webkit-transform: skewY(-4deg);
+        -moz-transform: skewY(-4deg);
+        -ms-transform: skewY(-4deg);
+        -o-transform: skewY(-4deg);
+        transform: skewY(-4deg);
+        background-color: black;
+        z-index: 0;
+    }
+
+    .word {
+        z-index: 1;
+    }
+
+    .section {
+        margin: 10rem 5% 5% 5%;
+        padding: 2rem;
+        border-radius: 10px;
     }
 </style>
