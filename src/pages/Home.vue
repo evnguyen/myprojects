@@ -4,42 +4,15 @@
     <v-layout row wrap>
         <v-flex xs12>
             <v-card color="black" dark height="500" style="vertical-align: middle;" class="home-words">
-                <v-layout row wrap style="height: 100%;">
-                    <v-flex xs4>
-                        <v-layout column>
-                            <v-flex v-scroll-reveal.reset="{ delay: 550, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                                <div class="display-3 word" style="text-align: right; margin: 20% 10% 0 10%;">Bonjour.</div>
-                            </v-flex>
-                            <v-flex style="margin:20%" class="word" v-scroll-reveal.reset="{ delay: 350, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                                <div class="display-3" style="text-align: right; margin: 20% 20% 0 0">Ciao.</div>
-                            </v-flex>
-                            <v-flex class="word" v-scroll-reveal.reset="{  delay: 150, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                                <div class="display-3" style="text-align: right; margin: 0 20% 0 0">Hola.</div>
-                            </v-flex>
-                        </v-layout>
-                    </v-flex>
-                    <v-flex xs4 style="height: 100%">
-                        <div class="container" v-scroll-reveal.reset="{ delay: 250, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                            <!--Maybe have this be different ways to say hello and have this auto slide/transition to the next one -->
-                            <!--Use carousels? -->
-                            <div class="display-4 word">Hello.</div>
-                        </div>
-                    </v-flex>
-
-                    <v-flex xs4>
-                        <v-layout column >
-                            <v-flex class="word" v-scroll-reveal.reset="{ delay: 350, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                                <div class="display-3 word" style="text-align: left; margin: 10% 10% 0 10%;">Szia.</div>
-                            </v-flex>
-                            <v-flex class="word" v-scroll-reveal.reset="{ delay: 650, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                                <div class="display-3 word" style="text-align: center; margin: 30% 20% 0 0">Ni Hau.</div>
-                            </v-flex>
-                            <v-flex class="word" v-scroll-reveal.reset="{ delay: 250, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                                <div class="display-3 word" style="text-align: left; margin: 20% 20% 0 0">Konnichiwa.</div>
-                            </v-flex>
-                        </v-layout>
-                    </v-flex>
-                </v-layout>
+                <div class="container">
+                    <carousel-3d style="z-index: 1;" :space="300">
+                        <slide v-for="(n, index) in 5" :index="index" :key="index" style="background: transparent;">
+                            <div class="container">
+                                <span class="display-4">Hello.</span>
+                            </div>
+                        </slide>
+                    </carousel-3d>
+                </div>
             </v-card>
         </v-flex>
         <v-flex xs12>
@@ -91,13 +64,16 @@
         z-index: 0;
     }
 
-    .word {
-        z-index: 1;
-    }
-
     .section {
         margin: 10rem 5% 5% 5%;
         padding: 2rem;
         border-radius: 10px;
+    }
+
+    .carousel-3d-slide.current {
+        opacity: 1 !important;
+    }
+    .carousel-3d-slide {
+        opacity: 0.5 !important;
     }
 </style>
