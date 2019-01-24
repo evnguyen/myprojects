@@ -8,7 +8,7 @@
                     <v-card class="section-box" v-scroll-reveal.reset="{ easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
                         <v-layout align-center justify-center row wrap style="padding:2rem;">
                             <v-flex md4 class="display-3 text-xs-center" style="padding:0 2rem 0 2rem;">
-                                ~ This is me. ~
+                                ~ This is me ~
                             </v-flex>
                             <v-flex md8>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor tellus ullamcorper, maximus eros eleifend, tincidunt diam. Fusce ultrices efficitur facilisis. Sed porta finibus nibh ac accumsan. Ut varius vestibulum sapien, at porta mi tempor tempor. Vivamus nec leo vel erat luctus maximus. Nulla sed blandit enim. Donec sagittis risus in consectetur molestie. Sed convallis turpis id felis molestie pellentesque. Integer laoreet eros nec est laoreet iaculis. Donec at tellus felis. Curabitur tincidunt nunc et commodo tincidunt.
@@ -21,7 +21,7 @@
 
         <v-flex xs12>
             <div class="section-cw-skew">
-                <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg" height="550" class="parallax-overlay">
+                <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg" height="600" class="parallax-overlay">
                     <v-card class="section-box" v-scroll-reveal.reset="{ delay: 500, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
                         <v-layout align-center justify-center row wrap style="padding:2rem;">
                             <v-flex md8>
@@ -39,7 +39,7 @@
 
         <v-flex xs12>
             <div class="" style="margin-top:-5%">
-                <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" height="550" class="parallax-overlay">
+                <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" height="600" class="parallax-overlay">
                     <v-card class="section-box" v-scroll-reveal.reset="{ easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
                         <v-layout align-center justify-center row wrap style="padding:2rem;">
                             <v-flex md4 class="display-1 text-xs-center" style="padding:0 2rem 0 2rem;">
@@ -90,8 +90,8 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #515151;
-        opacity: 0.8;
+        background-color: #6d6d6d;
+        opacity: 0.5;
         transition: all .3s linear;
         z-index: 2;
     }
@@ -100,7 +100,7 @@
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 10px;
-        margin-top:2rem;
         margin-bottom: 2rem;
+        z-index: 3;
     }
 </style>

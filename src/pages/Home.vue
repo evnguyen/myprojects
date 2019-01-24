@@ -3,12 +3,12 @@
 <template>
     <v-layout row wrap>
         <v-flex xs12>
-            <v-card color="black" dark height="500" style="vertical-align: middle;" class="home-words">
+            <v-card color="black" dark height="500" class="home-words">
                 <div class="container">
-                    <carousel-3d style="z-index: 1;" :space="300">
-                        <slide v-for="(n, index) in 5" :index="index" :key="index" style="background: transparent;">
+                    <carousel-3d style="z-index: 1;" :space="auto" width="550" autoplay="true">
+                        <slide v-for="(greeting, index) in greetings" :index="index" :key="index" style="background: transparent;">
                             <div class="container">
-                                <span class="display-4">Hello.</span>
+                                <span class="display-4">{{greeting}}.</span>
                             </div>
                         </slide>
                     </carousel-3d>
@@ -32,7 +32,12 @@
 
 <script>
     export default {
-        name: "Home"
+        name: "Home",
+        data(){
+            return {
+                greetings: ['Hello', 'Bonjour', 'Hola', 'Guten Tag', 'Konnichiwa', 'Nǐ hǎo']
+            }
+        },
     }
 </script>
 
@@ -42,10 +47,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .home-words {
-        margin-top: 4%;
     }
 
     .home-words:after {
@@ -74,6 +75,6 @@
         opacity: 1 !important;
     }
     .carousel-3d-slide {
-        opacity: 0.5 !important;
+        opacity: 0.2 !important;
     }
 </style>
