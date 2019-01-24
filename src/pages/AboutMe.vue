@@ -10,8 +10,10 @@
                             <v-flex md4 class="display-3 text-xs-center" style="padding:0 2rem 0 2rem;">
                                 ~ This is me ~
                             </v-flex>
-                            <v-flex md8>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor tellus ullamcorper, maximus eros eleifend, tincidunt diam. Fusce ultrices efficitur facilisis. Sed porta finibus nibh ac accumsan. Ut varius vestibulum sapien, at porta mi tempor tempor. Vivamus nec leo vel erat luctus maximus. Nulla sed blandit enim. Donec sagittis risus in consectetur molestie. Sed convallis turpis id felis molestie pellentesque. Integer laoreet eros nec est laoreet iaculis. Donec at tellus felis. Curabitur tincidunt nunc et commodo tincidunt.
+                            <v-flex md8 class="subheading" style="padding: 2rem;">
+                                My name is Edward Nguyen and I'm currently attending the University of Waterloo pursuing Computer Science as my major.
+                                I hope to not only hone my skills as a programmer, but also learn how to apply and present my projects in the work force.
+                                I've always loved helping others and I believe my career choice is the best way I can achieve this.
                             </v-flex>
                         </v-layout>
                     </v-card>
@@ -24,9 +26,15 @@
                 <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg" height="600" class="parallax-overlay">
                     <v-card class="section-box" v-scroll-reveal.reset="{ delay: 500, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
                         <v-layout align-center justify-center row wrap style="padding:2rem;">
-                            <v-flex md8>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor tellus ullamcorper, maximus eros eleifend, tincidunt diam. Fusce ultrices efficitur facilisis. Sed porta finibus nibh ac accumsan. Ut varius vestibulum sapien, at porta mi tempor tempor. Vivamus nec leo vel erat luctus maximus. Nulla sed blandit enim. Donec sagittis risus in consectetur molestie. Sed convallis turpis id felis molestie pellentesque. Integer laoreet eros nec est laoreet iaculis. Donec at tellus felis. Curabitur tincidunt nunc et commodo
-                                Donec eget ornare turpis, non molestie neque. Nunc risus orci, dignissim viverra auctor sit amet, iaculis a tortor. Integer condimentum feugiat mollis. Morbi placerat dolor accumsan imperdiet malesuada. Nullam quis facilisis eros. Suspendisse dignissim est ligula, eu aliquam est rutrum vitae. Mauris at turpis tincidunt, porta libero vel, accumsan eros. Cras in tempus leo. Donec turpis orci, eleifend vel semper eu, pretium nec est. Morbi dictum ante felis, vel dictum dolor rhoncus at.
+                            <v-flex md8 class="subheading" style="padding: 2rem;">
+                                One of the main reasons for maintaining this website is to have a playground I can use whenever I learn
+                                something new or a new idea comes to mind. That is, when inspiration comes, I have the ability to learn
+                                and present it here on this domain. I became aware of the fundamentals of Web development back in high school.
+                                I learned about the markup language, how to style a website, and was also inspired by past projects.
+                                Back then, it was really inspiring know that art doesn't just come through pencil and paint, but it can
+                                come through programming as well. Web development not only caters to artistic programmers, but it also
+                                caters to those algorithmic-centered programmers on the server side.
+
                             </v-flex>
                             <v-flex md4 class="display-1 text-xs-center" style="padding:0 2rem 0 2rem;">
                                 ~ Web Development ~
@@ -45,9 +53,13 @@
                             <v-flex md4 class="display-1 text-xs-center" style="padding:0 2rem 0 2rem;">
                                 ~ Android Development ~
                             </v-flex>
-                            <v-flex md8>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor tellus ullamcorper, maximus eros eleifend, tincidunt diam. Fusce ultrices efficitur facilisis. Sed porta finibus nibh ac accumsan. Ut varius vestibulum sapien, at porta mi tempor tempor. Vivamus nec leo vel erat luctus maximus. Nulla sed blandit enim. Donec sagittis risus in consectetur molestie. Sed convallis turpis id felis molestie pellentesque. Integer laoreet eros nec est laoreet iaculis. Donec at tellus felis. Curabitur tincidunt nunc et commodo
-                                Donec eget ornare turpis, non molestie neque. Nunc risus orci, dignissim viverra auctor sit amet, iaculis a tortor. Integer condimentum feugiat mollis. Morbi placerat dolor accumsan imperdiet malesuada. Nullam quis facilisis eros. Suspendisse dignissim est ligula, eu aliquam est rutrum vitae. Mauris at turpis tincidunt, porta libero vel, accumsan eros. Cras in tempus leo. Donec turpis orci, eleifend vel semper eu, pretium nec est. Morbi dictum ante felis, vel dictum dolor rhoncus at.
+                            <v-flex md8 class="subheading" style="padding: 2rem;">
+                                Android has always been my preferred mobile OS. I enjoyed having the flexibility as well as
+                                the aesthetics of it. Getting my very first smartphone was an incredible experience.
+                                Hearing about Flappy Birds success, I realized that even very simply apps can generate
+                                enormous entertainment to people. This then lead me to pursue app development.
+                                As I learn more about developing Android apps, I hope to continually document what
+                                I have learned and what I have created during the process.
                             </v-flex>
                         </v-layout>
                     </v-card>

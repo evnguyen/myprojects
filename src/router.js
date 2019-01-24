@@ -1,5 +1,6 @@
 import Home from './pages/Home.vue'
 import AboutMe from './pages/AboutMe.vue'
+import Resume from './pages/Resume'
 const router = [
     {
         component: Home,
@@ -7,7 +8,11 @@ const router = [
     },
     {
         component: AboutMe,
-        path: '/AboutMe'
+        path: '/aboutMe'
+    },
+    {
+        component: Resume,
+        path: '/resume'
     }
 ];
 

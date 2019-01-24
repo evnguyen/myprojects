@@ -54,10 +54,10 @@
                 <router-link to="/" class="menu-link">
                     <v-btn flat>Home</v-btn>
                 </router-link>
-                <router-link to="/AboutMe" class="menu-link">
+                <router-link to="/aboutMe" class="menu-link">
                     <v-btn flat>About Me</v-btn>
                 </router-link>
-                <router-link to="/" class="menu-link">
+                <router-link to="/resume" class="menu-link">
                     <v-btn flat>Resume</v-btn>
                 </router-link>
             </v-toolbar-items>
