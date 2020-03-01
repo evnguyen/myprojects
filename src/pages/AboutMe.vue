@@ -3,16 +3,16 @@
 <template>
     <v-layout row wrap>
         <v-flex xs12>
-            <div style="">
+            <div>
                 <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" height="600" class="parallax-overlay">
-                    <v-card class="section-box" v-scroll-reveal.reset="{ easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                        <v-layout align-center justify-center row wrap style="padding:2rem;">
-                            <v-flex md4 class="display-3 text-xs-center" style="padding:0 2rem 0 2rem;">
+                    <v-card class="section__container" v-scroll-reveal.reset="{ easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                        <v-layout align-center justify-center row wrap class="section__content">
+                            <v-flex md4 class="display-3 text-xs-center section__header">
                                 ~ This is me ~
                             </v-flex>
-                            <v-flex md8 class="subheading" style="padding: 2rem;">
-                                My name is Edward Nguyen and I'm currently attending the University of Waterloo pursuing Computer Science as my major.
-                                I hope to not only hone my skills as a programmer, but also learn how to apply and present my projects in the work force.
+                            <v-flex md8 class="subheading section__body">
+                                My name is Edward Nguyen and I have a bachelor's degree in computer science.
+                                I hope to not only hone my skills as a programmer, but also learn how to apply and present what I've learned in the work force.
                                 I've always loved helping others and I believe my career choice is the best way I can achieve this.
                             </v-flex>
                         </v-layout>
@@ -22,21 +22,21 @@
         </v-flex>
 
         <v-flex xs12>
-            <div class="section-cw-skew">
-                <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg" height="600" class="parallax-overlay">
-                    <v-card class="section-box" v-scroll-reveal.reset="{ delay: 500, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                        <v-layout align-center justify-center row wrap style="padding:2rem;">
-                            <v-flex md8 class="subheading" style="padding: 2rem;">
+            <div class="section--right-skew">
+                <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg" :height="viewPort === 'xs' ? 800 : 600" class="parallax-overlay">
+                    <v-card class="section__container section--left-skew" v-scroll-reveal.reset="{ delay: 500, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                        <v-layout align-center justify-center row wrap class="section__content">
+                            <v-flex md8 class="subheading section__body">
                                 One of the main reasons for maintaining this website is to have a playground I can use whenever I learn
                                 something new or a new idea comes to mind. That is, when inspiration comes, I have the ability to learn
                                 and present it here on this domain. I became aware of the fundamentals of Web development back in high school.
                                 I learned about the markup language, how to style a website, and was also inspired by past projects.
                                 Back then, it was really inspiring know that art doesn't just come through pencil and paint, but it can
-                                come through programming as well. Web development not only caters to artistic programmers, but it also
-                                caters to those algorithmic-centered programmers on the server side.
+                                come through programming as well. Web development not only caters to one's artistic side, but it also
+                                caters to one's algorithmic side.
 
                             </v-flex>
-                            <v-flex md4 class="display-1 text-xs-center" style="padding:0 2rem 0 2rem;">
+                            <v-flex md4 class="display-1 text-xs-center section__header">
                                 ~ Web Development ~
                             </v-flex>
                         </v-layout>
@@ -48,12 +48,12 @@
         <v-flex xs12>
             <div class="" style="margin-top:-5%">
                 <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" height="600" class="parallax-overlay">
-                    <v-card class="section-box" v-scroll-reveal.reset="{ easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
-                        <v-layout align-center justify-center row wrap style="padding:2rem;">
-                            <v-flex md4 class="display-1 text-xs-center" style="padding:0 2rem 0 2rem;">
-                                ~ Android Development ~
+                    <v-card class="section__container" v-scroll-reveal.reset="{ easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
+                        <v-layout align-center justify-center row wrap class="section__content">
+                            <v-flex md4 class="display-1 text-xs-center section__header">
+                                ~ Mobile Development ~
                             </v-flex>
-                            <v-flex md8 class="subheading" style="padding: 2rem;">
+                            <v-flex md8 class="subheading section__body">
                                 Android has always been my preferred mobile OS. I enjoyed having the flexibility as well as
                                 the aesthetics of it. Getting my very first smartphone was an incredible experience.
                                 Hearing about Flappy Birds success, I realized that even very simply apps can generate
@@ -72,12 +72,30 @@
 
 <script>
     export default {
-        name: "AboutMe"
+        name: "AboutMe",
+        computed: {
+            viewPort() {
+                switch (this.$vuetify.breakpoint.name) {
+                    case 'xs':
+                        return 'xs';
+                    case 'sm':
+                        return 'sm';
+                    case 'md':
+                        return 'md';
+                    case 'lg':
+                        return 'lg';
+                    case 'xl':
+                        return 'xl';
+                    default:
+                        return'xs';
+                }
+            }
+        },
     }
 </script>
 
 <style scoped>
-    .section-cw-skew {
+    .section--right-skew {
         -webkit-transform: skewY(5deg);
         -moz-transform: skewY(5deg);
         -ms-transform: skewY(5deg);
@@ -86,7 +104,7 @@
         margin-top:-5%;
     }
 
-    .section-cw-skew .section-box {
+    .section--left-skew{
         -webkit-transform: skewY(-5deg);
         -moz-transform: skewY(-5deg);
         -ms-transform: skewY(-5deg);
@@ -108,11 +126,24 @@
         z-index: 2;
     }
 
-    .section-box {
+    .section__container {
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 10px;
         margin-bottom: 2rem;
         z-index: 3;
+        margin-top: 2rem;
+    }
+
+    .section__content {
+        padding: 2rem;
+    }
+
+    .section__header {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .section__body {
+        padding: 2rem;
     }
 </style>

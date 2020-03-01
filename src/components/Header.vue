@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-navigation-drawer v-model="side_nav" absolute temporary>
+        <v-navigation-drawer v-model="side_nav" fixed temporary>
             <v-list class="pa-1">
                 <v-list-tile >
                     <v-list-tile-content>
@@ -33,7 +33,7 @@
                     </v-list-tile>
                 </router-link>
 
-                <router-link to="/" class="menu-link">
+                <router-link to="/resume" class="menu-link">
                     <v-list-tile @click="">
                         <v-list-tile-action>
                             <i class="material-icons">list_alt</i>
