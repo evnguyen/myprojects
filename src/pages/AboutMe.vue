@@ -4,16 +4,21 @@
     <v-layout row wrap>
         <v-flex xs12>
             <div>
-                <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" height="600" class="parallax-overlay">
+                <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" :height="viewPort === 'xs' ? 900 : 600" class="parallax-overlay">
                     <v-card class="section__container" v-scroll-reveal.reset="{ easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
                         <v-layout align-center justify-center row wrap class="section__content">
                             <v-flex md4 class="display-3 text-xs-center section__header">
                                 ~ This is me ~
                             </v-flex>
                             <v-flex md8 class="subheading section__body">
-                                My name is Edward Nguyen and I have a bachelor's degree in computer science.
-                                I hope to not only hone my skills as a programmer, but also learn how to apply and present what I've learned in the work force.
-                                I've always loved helping others and I believe my career choice is the best way I can achieve this.
+                                My name is Edward Nguyen and I have a bachelor's degree in computer science. I hope to
+                                continually strengthen my skills as a programmer while in the workforce. I would describe
+                                myself as someone who loves to learn and loves to help others. I believe programming is a
+                                field where you can never fully master. There are so many different languages, so many
+                                different libraries and frameworks to know. Being able to learn new things also assists
+                                me in helping others as well. The better I know ideas and concepts, the better I can help
+                                others. Thus I always strive to become a person whom people can rely on. It allows me to
+                                not only help others, but also reinforce and possibly strengthen the skills I possess.
                             </v-flex>
                         </v-layout>
                     </v-card>
@@ -27,13 +32,15 @@
                     <v-card class="section__container section--left-skew" v-scroll-reveal.reset="{ delay: 500, easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
                         <v-layout align-center justify-center row wrap class="section__content">
                             <v-flex md8 class="subheading section__body">
-                                One of the main reasons for maintaining this website is to have a playground I can use whenever I learn
-                                something new or a new idea comes to mind. That is, when inspiration comes, I have the ability to learn
-                                and present it here on this domain. I became aware of the fundamentals of Web development back in high school.
-                                I learned about the markup language, how to style a website, and was also inspired by past projects.
-                                Back then, it was really inspiring know that art doesn't just come through pencil and paint, but it can
-                                come through programming as well. Web development not only caters to one's artistic side, but it also
-                                caters to one's algorithmic side.
+                                One of the main reasons for maintaining this website is to have a playground I can use
+                                whenever I learn something new or a new idea comes to mind. That is, when inspiration
+                                comes, I have the ability to learn and present it here on this domain. I became aware of
+                                the fundamentals of Web development back in high school. I learned about the markup
+                                language, how to style a website, and was also inspired by past projects. Back then,
+                                it was really inspiring know that art doesn't just come through pencil and paint, but
+                                it can come through programming as well. One aspect about web development that I truly
+                                love is that it not only caters to one's artistic side, but it also caters to one's
+                                technical side.
 
                             </v-flex>
                             <v-flex md4 class="display-1 text-xs-center section__header">
@@ -51,15 +58,13 @@
                     <v-card class="section__container" v-scroll-reveal.reset="{ easing: 'cubic-bezier(0.5, 0, 0, 1)'  }">
                         <v-layout align-center justify-center row wrap class="section__content">
                             <v-flex md4 class="display-1 text-xs-center section__header">
-                                ~ Mobile Development ~
+                                ~ Work-life Balance ~
                             </v-flex>
                             <v-flex md8 class="subheading section__body">
-                                Android has always been my preferred mobile OS. I enjoyed having the flexibility as well as
-                                the aesthetics of it. Getting my very first smartphone was an incredible experience.
-                                Hearing about Flappy Birds success, I realized that even very simply apps can generate
-                                enormous entertainment to people. This then lead me to pursue app development.
-                                As I learn more about developing Android apps, I hope to continually document what
-                                I have learned and what I have created during the process.
+                                When I’m not tackling complex problems, you might find me in the gym or sitting back
+                                relaxing with my feet up enjoying the latest trendy TV show. I fundamentally believe
+                                that work-life balance is key to staying healthy and happy, thus I always strive to be
+                                in an environment where it can be maintained.
                             </v-flex>
                         </v-layout>
                     </v-card>
@@ -95,7 +100,7 @@
 </script>
 
 <style scoped>
-    .section--right-skew {
+    .section--right-skew:before {
         -webkit-transform: skewY(5deg);
         -moz-transform: skewY(5deg);
         -ms-transform: skewY(5deg);
@@ -104,7 +109,7 @@
         margin-top:-5%;
     }
 
-    .section--left-skew{
+    .section--left-skew:before{
         -webkit-transform: skewY(-5deg);
         -moz-transform: skewY(-5deg);
         -ms-transform: skewY(-5deg);
