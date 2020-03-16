@@ -1,16 +1,23 @@
 <template>
     <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" height="100%" class="parallax-overlay">
-        <v-layout row wrap style="margin:6rem;">
+        <v-layout row wrap style="margin: 6rem;">
             <v-flex xs12>
-                <v-card style=" padding: 3rem;" class="section-card">
-                    <div class="headline">Summary of Qualifications</div>
+                <v-card style="padding: 3rem;" class="section-card">
+                    <div class="headline">SKILLS SUMMARY</div>
                     <v-divider style="margin-bottom: 1rem;"></v-divider>
+                    <div class="subheading"><b>Proficient</b></div>
                     <ul class="subheading">
-                        <li>Object Oriented programming: Java, C, C++, C#</li>
-                        <li>Web Development:  JavaScript, AngularJS, Vue.js, Vuex, ASP.NET, PHP, Drupal 7, Mocha, HTML, CSS</li>
-                        <li>Databases: MySQL and Microsoft SQL Server </li>
-                        <li>In-depth insight on the Model-View-Controller pattern</li>
-                        <li>Experienced with Git, JIRA, and Agile/Scrum development</li>
+                        <li>Vue.js, Vuex, Vuetify, Git, HTML, CSS</li>
+                    </ul>
+                    <br>
+                    <div class="subheading"><b>Intermediate</b></div>
+                    <ul class="subheading">
+                        <li>AngularJS, PHP, Drupal 7, Jest, Mocha, Sinon.JS, Cypress, MySQL</li>
+                    </ul>
+                    <br>
+                    <div class="subheading"><b>Beginner</b></div>
+                    <ul class="subheading">
+                        <li>React, SASS</li>
                     </ul>
                 </v-card>
             </v-flex>
@@ -19,17 +26,25 @@
                 <v-card style="padding: 3rem;" class="section-card">
                     <div class="headline">Work Experience</div>
                     <v-divider style="margin-bottom: 1rem;"></v-divider>
-                    <div class="subheading"><b>University of Waterloo – Full Stack Developer | September 2018 – December 2018</b></div>
+                    <div class="subheading"><b>SSIMWAVE Inc. – Front-End Developer, Co-op | May 2019 – August 2019</b></div>
                     <ul class="subheading">
-                        <li>Tasked with writing RESTful API’s using ASP.NET (C#) , Entity framework and MVC pattern</li>
-                        <li>Responsible for developing and maintaining AngularJS web pages in Portal alongside other developers</li>
-                        <li>Collaborated with team members to design and develop web pages in Vue.js with Vuex and Vuetify</li>
-                        <li>Effectively worked with clients to obtain feedback and incorporate them</li>
-                        <li>Tasked with writing unit tests for some of the Vue.js web pages</li>
-                        <li>Developed a pre-alpha version of an instant messaging widget for Portal from scratch</li>
+                        <li>Collaborated with team to overhaul front-end from AngularJS to Vue.js</li>
+                        <li>Helped develop scheduling functionality in Vue.js and Express.js</li>
+                        <li>Tasked with trimming down bug related tickets in JIRA</li>
+                        <li>Wrote unit tests and end-to-end tests </li>
+                        <li>Worked efficiently in an agile environment</li>
                     </ul>
                     <br>
-                    <div class="subheading"><b>University of Waterloo - Web Developer |May 2017 – May 2018</b></div>
+                    <div class="subheading"><b>University of Waterloo – Full Stack Developer, Co-op | September 2018 – December 2018</b></div>
+                    <ul class="subheading">
+                        <li>Communicated with the co-op department to develop a paging widget</li>
+                        <li>Collaborated with team members to design and develop web pages in Vue.js using Vuex and Vuetify for Portal 2.0</li>
+                        <li>Implemented RESTful API’s using ASP.NET (C#)</li>
+                        <li>Wrote unit tests for Vue.js web pages </li>
+                        <li>Developed a working prototype of an instant messaging widget for Portal 1.0 as an 80/20 project</li>
+                    </ul>
+                    <br>
+                    <div class="subheading"><b>University of Waterloo - Web Developer, Co-op | May 2017 – May 2018</b></div>
                     <ul class="subheading">
                         <li>Responsible for creating a custom Drupal module to extend the current basic Web form functionality</li>
                         <li>Tasked to continue the PHP-based part-time worker submission application</li>
@@ -37,13 +52,6 @@
                         <li>Collaborated with other team members such as Senior Developers, Digital Designers, and Project Managers</li>
                     </ul>
                     <br>
-                    <div class="subheading"><b>Validus Research Inc. - Quality Assurance Developer | September 2016 – December 2016</b></div>
-                    <ul class="subheading">
-                        <li>Responsible for managing User Request tickets and bug tickets in JIRA</li>
-                        <li>Worked with other team members such as Developers, QA, and Project Coordinator to complete these User Requests</li>
-                        <li>Performed Smoke Testing, Regression Testing, and writing test plans and test cases</li>
-                        <li>Performed SQL search queries for database testing</li>
-                    </ul>
                 </v-card>
             </v-flex>
 
@@ -51,8 +59,8 @@
                 <v-card style=" padding: 3rem;" class="section-card">
                     <div class="headline">Education</div>
                     <v-divider style="margin-bottom: 1rem;"></v-divider>
-                    <div class="subheading">Candidate for Bachelor of Computer Science, Computer Science, University of Waterloo,
-                        Waterloo, Ontario, September 2014 – Present</div>
+                    <div class="subheading">Bachelor of Computer Science, Computer Science, University of Waterloo,
+                        Waterloo, Ontario, September 2014 – December 2019</div>
                 </v-card>
             </v-flex>
 
@@ -61,24 +69,11 @@
                     <div class="headline">Projects</div>
                     <v-divider style="margin-bottom: 1rem;"></v-divider>
 
-                    <div class="subheading"><b>Simon game – Android application</b></div>
+                    <div class="subheading"><b>Tunelight – HackConcordia2019</b></div>
                     <ul class="subheading">
-                        <li>Mimics the original Simon game</li>
-                        <li>Players can choose the game difficulty as well as the number of Simon buttons ranging from 1-6</li>
-                        <li>Uses the MVC pattern for its core development</li>
-                    </ul>
-                    <br>
-                    <div class="subheading"><b>Lunar Lander – Java Swing</b></div>
-                    <ul class="subheading">
-                        <li>Terrain editable version of the classic Lunar lander game</li>
-                        <li>Contains a game screen and an edit screen where players can edit the terrain and undo/redo edits.</li>
-                        <li>Developed using the MVC pattern</li>
-                    </ul>
-                    <br>
-                    <div class="subheading"><b>HackHarvard</b></div>
-                    <ul class="subheading">
-                        <li>Developed an android application for lost and found pets in Kotlin using Firebase for data storage</li>
-                        <li>Enables users to post a description of a sighted lost pet with its corresponding location in Google Maps</li>
+                        <li>Generates the top 10 songs, genres or artists given a date range and location using TouchTunes’ API</li>
+                        <li>Tasked with building the front-end</li>
+                        <li>Spent 36 hours to learn React from scratch</li>
                     </ul>
                 </v-card>
             </v-flex>
