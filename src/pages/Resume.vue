@@ -5,19 +5,19 @@
                 <v-card style="padding: 3rem;" class="section-card">
                     <div class="headline">SKILLS SUMMARY</div>
                     <v-divider style="margin-bottom: 1rem;"></v-divider>
-                    <div class="subheading"><b>Proficient</b></div>
+                    <div class="subheading"><b>Languages</b></div>
                     <ul class="subheading">
-                        <li>Vue.js, Vuex, Vuetify, Git, HTML, CSS</li>
+                        <li>JavaScript, PHP, HTML5, CSS3</li>
                     </ul>
                     <br>
-                    <div class="subheading"><b>Intermediate</b></div>
+                    <div class="subheading"><b>Frameworks/Libraries/Tools</b></div>
                     <ul class="subheading">
-                        <li>AngularJS, PHP, Drupal 7, Jest, Mocha, Sinon.JS, Cypress, MySQL</li>
+                        <li>Vue.js, Vuex, Vuetify, AngularJS, Drupal 7, Jest, Cypress, Git, JIRA</li>
                     </ul>
                     <br>
-                    <div class="subheading"><b>Beginner</b></div>
+                    <div class="subheading"><b>Databases</b></div>
                     <ul class="subheading">
-                        <li>React, SASS</li>
+                        <li>MySQL, Microsoft SQL server</li>
                     </ul>
                 </v-card>
             </v-flex>
