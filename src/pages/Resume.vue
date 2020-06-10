@@ -1,6 +1,6 @@
 <template>
     <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" height="100%" class="parallax-overlay">
-        <v-layout row wrap style="margin: 6rem;">
+        <v-layout row wrap style="margin-top: 6rem;">
             <v-flex xs12>
                 <v-card style="padding: 3rem;" class="section-card">
                     <div class="headline">SKILLS SUMMARY</div>
