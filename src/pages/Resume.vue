@@ -7,7 +7,7 @@
                     <v-divider style="margin-bottom: 1rem;"></v-divider>
                     <div class="subheading"><b>Languages</b></div>
                     <ul class="subheading">
-                        <li>JavaScript, PHP, HTML5, CSS3</li>
+                        <li>JavaScript, PHP, HTML5, CSS3, Java, C++</li>
                     </ul>
                     <br>
                     <div class="subheading"><b>Frameworks/Libraries/Tools</b></div>
