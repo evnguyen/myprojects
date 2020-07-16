@@ -26,7 +26,7 @@
                 <v-card style="padding: 3rem;" class="section-card">
                     <div class="headline">Work Experience</div>
                     <v-divider style="margin-bottom: 1rem;"></v-divider>
-                    <div class="subheading"><b>SSIMWAVE Inc. – Front-End Developer, Co-op | May 2019 – August 2019</b></div>
+                    <div class="subheading"><b>SSIMWAVE Inc. – Front-End Developer | May 2019 – August 2019</b></div>
                     <ul class="subheading">
                         <li>Collaborated with team to overhaul front-end from AngularJS to Vue.js</li>
                         <li>Helped develop scheduling functionality in Vue.js and Express.js</li>
@@ -35,7 +35,7 @@
                         <li>Worked efficiently in an agile environment</li>
                     </ul>
                     <br>
-                    <div class="subheading"><b>University of Waterloo – Full Stack Developer, Co-op | September 2018 – December 2018</b></div>
+                    <div class="subheading"><b>University of Waterloo – Full Stack Developer | September 2018 – December 2018</b></div>
                     <ul class="subheading">
                         <li>Communicated with the co-op department to develop a paging widget</li>
                         <li>Collaborated with team members to design and develop web pages in Vue.js using Vuex and Vuetify for Portal 2.0</li>
@@ -44,7 +44,7 @@
                         <li>Developed a working prototype of an instant messaging widget for Portal 1.0 as an 80/20 project</li>
                     </ul>
                     <br>
-                    <div class="subheading"><b>University of Waterloo - Web Developer, Co-op | May 2017 – May 2018</b></div>
+                    <div class="subheading"><b>University of Waterloo - Web Developer | May 2017 – May 2018</b></div>
                     <ul class="subheading">
                         <li>Responsible for creating a custom Drupal module to extend the current basic Web form functionality</li>
                         <li>Tasked to continue the PHP-based part-time worker submission application</li>
